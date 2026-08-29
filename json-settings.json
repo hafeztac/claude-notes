@@ -1,0 +1,20 @@
+{
+  "model": "claude-sonnet-5",
+  "permissions": {
+    "allow": [
+      "Bash(git status)",
+      "Bash(git diff *)",
+      "Bash(npm run test)"
+    ],
+    "deny": [
+      "Bash(rm -rf *)"
+    ],
+    "defaultMode": "default"
+  },
+  "env": {
+    "DISABLE_TELEMETRY": "0"
+  },
+  "includeCoAuthoredBy": true,
+  "cleanupPeriodDays": 30,
+  "hooks": {}
+}
